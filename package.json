@@ -1,0 +1,36 @@
+{
+  "name": "omsi-to-lgln",
+  "version": "0.1.0",
+  "description": "Convert OMSI URLs to LGLN URLs",
+  "main": "index.js",
+  "bin": "bin/omsi-to-lgln.js",
+  "scripts": {
+    "build": "pkg . --targets win --out-path dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvsde/omsi-to-lgln.git"
+  },
+  "author": "Fynn Becker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mvsde/omsi-to-lgln/issues"
+  },
+  "homepage": "https://github.com/mvsde/omsi-to-lgln#readme",
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "pkg": "^4.3.4"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chalk": "^2.4.1",
+    "express": "^4.16.3",
+    "get-port": "^4.0.0",
+    "inquirer": "^6.1.0"
+  }
+}
