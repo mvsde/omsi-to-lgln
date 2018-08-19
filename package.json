@@ -1,6 +1,6 @@
 {
   "name": "omsi-to-lgln",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2",
   "description": "Convert OMSI URLs to LGLN URLs",
   "main": "index.js",
   "bin": "bin/omsi-to-lgln.js",
@@ -31,6 +31,8 @@
     "chalk": "^2.4.1",
     "express": "^4.16.3",
     "get-port": "^4.0.0",
-    "inquirer": "^6.1.0"
+    "inquirer": "^6.1.0",
+    "usng.js": "^0.2.3",
+    "utm": "^1.1.1"
   }
 }

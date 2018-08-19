@@ -34,12 +34,12 @@ module.exports = async function () {
   const app = express()
 
   app.get('/', async (request, response) => {
-    console.log(chalk`\n{bold Request coordinates}`)
+    console.log(chalk`\n{bold Request coordinates (lat/long)}`)
     console.log(request.query)
 
     const coordinates = convertCoordinates(request.query)
 
-    console.log(chalk`\n{bold Converted coordinates}`)
+    console.log(chalk`\n{bold Converted coordinates (UTM)}`)
     console.log(coordinates)
 
     const map = await requestMap({
@@ -63,7 +63,7 @@ module.exports = async function () {
     console.log(chalk`{blue ${address}}`)
 
     console.log(chalk`\n{bold Usage}`)
-    console.log(chalk`${address}/?x={black.bgWhite X}&y={black.bgWhite Y}&z={black.bgWhite ZOOM}`)
+    console.log(chalk`${address}/?x={black.bgWhite LATITUDE}&y={black.bgWhite LONGITUDE}&z={black.bgWhite ZOOM}`)
 
     console.log(chalk`\n{bold.green Waiting for requests…}`)
   })
