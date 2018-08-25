@@ -41,6 +41,13 @@ module.exports = async function () {
 
     const coordinates = convertCoordinates(request.query)
 
+    if (!coordinates.success) {
+      console.log(chalk`\n{bold.red Error}`)
+      console.log(coordinates.error.message)
+
+      return response.status(500).end()
+    }
+
     console.log(chalk`\n{bold Converted coordinates (UTM)}`)
     console.log(coordinates)
 
@@ -50,12 +57,12 @@ module.exports = async function () {
       height: settings.height
     })
 
-    if (map) {
-      response.type('png')
-      response.send(map.data)
-    } else {
-      response.send('Error')
+    if (!map) {
+      return response.status(500).end()
     }
+
+    response.type('png')
+    response.send(map.data)
   })
 
   app.listen(settings.port, function () {
