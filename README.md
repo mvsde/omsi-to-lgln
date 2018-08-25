@@ -2,6 +2,10 @@
 
 Convert OMSI URLs to LGLN URLs via a local proxy server.
 
+## Download
+
+Get the [latest release](https://github.com/mvsde/omsi-to-lgln/releases/latest) from the GitHub releases section and run the server.
+
 Example URL:
 
 http://localhost:3000/?x=34589&y=21269&z=16
