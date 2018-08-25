@@ -5,6 +5,7 @@
   "main": "index.js",
   "bin": "bin/omsi-to-lgln.js",
   "scripts": {
+    "dev": "node bin/omsi-to-lgln",
     "build": "pkg . --targets win --out-path dist"
   },
   "repository": {
