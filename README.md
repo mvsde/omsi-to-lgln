@@ -4,7 +4,7 @@ Convert OMSI URLs to LGLN URLs via a local proxy server.
 
 Example URL:
 
-http://localhost:3000/?x=53.3332&y=9.8667&z=16
+http://localhost:3000/?x=34589&y=21269&z=16
 
 ## Development
 

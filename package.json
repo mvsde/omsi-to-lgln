@@ -1,6 +1,6 @@
 {
   "name": "omsi-to-lgln",
-  "version": "0.1.0-alpha.4",
+  "version": "0.1.0-alpha.5",
   "description": "Convert OMSI URLs to LGLN URLs",
   "main": "index.js",
   "bin": "bin/omsi-to-lgln.js",
