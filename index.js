@@ -34,6 +34,8 @@ module.exports = async function () {
   const app = express()
 
   app.get('/', async (request, response) => {
+    console.log(chalk`\n================================================================================`)
+
     console.log(chalk`\n{bold Request coordinates (lat/long)}`)
     console.log(request.query)
 
