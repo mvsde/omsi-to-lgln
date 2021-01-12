@@ -28,7 +28,7 @@
     "pkg": "^4.3.4"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "chalk": "^2.4.1",
     "express": "^4.16.3",
     "get-port": "^4.0.0",
